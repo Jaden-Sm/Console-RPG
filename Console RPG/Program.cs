@@ -17,9 +17,11 @@ namespace Console_RPG
                 //die;
                 Console.WriteLine("you re daead");
             }
-            string deepwoken;
             Item potion1 = new Potion("Health Potion", "", 2, 1, 5, 0, "health");
             Item potion2 = new Potion("Greater Health Potion", "", 2, 1, 10, 0, "health");
+            Shop shop = new Shop(new List<Item>() { potion1, potion2 });
+            shop.shop();
+            string deepwoken;
             List<Entity> enemyList = new List<Entity>() { Enemy.e, Enemy.a };
             List<Player> players = new List<Player>() { Player.jackson };
             Player.jackson.inventory.Add(potion1);

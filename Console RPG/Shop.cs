@@ -21,10 +21,11 @@ namespace Console_RPG
                 Console.WriteLine("Welcome to my shop, I currently have: \n");
                 for(int i = 0; i < itemlist.Count; i++)
                 {
-                    Console.WriteLine($"{itemlist[i]}\n");
+                    Console.WriteLine($"{i}:{itemlist[i].name}:\n{itemlist[i].description}\n");
                 }
+
+                break;
             }
-            
         }
     }
 }
